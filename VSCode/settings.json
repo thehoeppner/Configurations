@@ -1,0 +1,67 @@
+{
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "terminal.explorerKind": "external",
+    "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "workbench.iconTheme": "vscode-icons",
+    "debug.console.closeOnEnd": true,
+    "debug.allowBreakpointsEverywhere": true,
+    "git.enableSmartCommit": true,
+    "editor.fontFamily": "JetBrains Mono",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "explorer.compactFolders": false,
+    "editor.codeLensFontFamily": "JetBrains Mono",
+    "editor.inlayHints.fontFamily": "JetBrains Mono",
+    "vim.statusBarColorControl": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff"
+    },
+    "vim.leader": "<space>",
+    "editor.lineNumbers": "relative",
+    "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
+    "vim.easymotionMarkerWidthPerChar": 12,
+    "vim.easymotionMarkerFontFamily": "Fira Code",
+    "vim.easymotionMarkerFontWeight": "normal",
+    "vim.foldfix": true,
+    "vim.sneak": true,
+    "vim.normalModeKeyBindingsNonRecursive": [{
+            "before": ["u"],
+            "after": [],
+            "commands": [{
+                "command": "undo",
+                "args": []
+            }]
+        },
+        {
+            "before": ["<C-r>"],
+            "after": [],
+            "commands": [{
+                "command": "redo",
+                "args": []
+            }]
+        },
+        {
+           "before":["J"],
+           "after": ["5", "j"],
+        },
+        {
+           "before":["K"],
+           "after": ["5", "k"],
+        },
+        {
+           "before":["<Leader>","m"],
+           "after": [":noh"],
+        },
+        {
+           "before":["ä"],
+           "after": ["$"],
+        }
+    ],
+}
