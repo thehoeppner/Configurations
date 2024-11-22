@@ -255,6 +255,15 @@
                 "workbench.action.previousEditor"
             ]
         },
+        {
+            "before": [
+                "leader",
+                "e"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
     ],
     "workbench.iconTheme": "catppuccin-perfect-dracula",
     "extensions.experimental.affinity": {
