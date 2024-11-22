@@ -4,7 +4,6 @@
     "terminal.explorerKind": "external",
     "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "workbench.iconTheme": "vscode-icons",
     "debug.console.closeOnEnd": true,
     "debug.allowBreakpointsEverywhere": true,
     "git.enableSmartCommit": true,
@@ -16,9 +15,9 @@
     "editor.inlayHints.fontFamily": "JetBrains Mono",
     "vim.statusBarColorControl": true,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f",
+        "statusBar.background": "#5f00af",
+        "statusBar.noFolderBackground": "#5f00af",
+        "statusBar.debuggingBackground": "#5f00af",
         "statusBar.foreground": "#ffffff",
         "statusBar.debuggingForeground": "#ffffff"
     },
@@ -31,37 +30,237 @@
     "vim.easymotionMarkerFontWeight": "normal",
     "vim.foldfix": true,
     "vim.sneak": true,
-    "vim.normalModeKeyBindingsNonRecursive": [{
-            "before": ["u"],
+    "vim.smartRelativeLine": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "u"
+            ],
             "after": [],
-            "commands": [{
-                "command": "undo",
-                "args": []
-            }]
+            "commands": [
+                {
+                    "command": "undo",
+                    "args": []
+                }
+            ]
         },
         {
-            "before": ["<C-r>"],
+            "before": [
+                "<C-r>"
+            ],
             "after": [],
-            "commands": [{
-                "command": "redo",
-                "args": []
-            }]
+            "commands": [
+                {
+                    "command": "redo",
+                    "args": []
+                }
+            ]
         },
         {
-           "before":["J"],
-           "after": ["5", "j"],
+            "before": [
+                "J"
+            ],
+            "after": [
+                "5",
+                "j"
+            ],
         },
         {
-           "before":["K"],
-           "after": ["5", "k"],
+            "before": [
+                "K"
+            ],
+            "after": [
+                "5",
+                "k"
+            ],
         },
         {
-           "before":["<Leader>","m"],
-           "after": [":noh"],
+            "before": [
+                "<Leader>",
+                "m"
+            ],
+            "after": [
+                ":noh"
+            ],
         },
         {
-           "before":["ä"],
-           "after": ["$"],
-        }
+            "before": [
+                "ä"
+            ],
+            "after": [
+                "$"
+            ],
+        },
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "revealInExplorer"
+            ],
+        },
+        {
+            "before": [
+                "<leader>",
+                "r",
+                "f"
+            ],
+            "commands": [
+                "fileutils.renameFile"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.focusLeftGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.focusBelowGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.focusAboveGroup"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.focusRightGroup"
+            ]
+        },
+        // Peek Definition
+        {
+            "before": [
+                "g",
+                "p",
+                "d"
+            ],
+            "commands": [
+                "editor.action.peekDefinition"
+            ]
+        },
+        // Show Hover
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "editor.action.showDefinitionPreviewHover"
+            ]
+        },
+        // Go to Implementations
+        {
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        // Peek Implementations
+        {
+            "before": [
+                "g",
+                "p",
+                "i"
+            ],
+            "commands": [
+                "editor.action.peekImplementation"
+            ]
+        },
+        // Go to References
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.referenceSearch.trigger"
+            ]
+        },
+        // Go to Type Definition
+        {
+            "before": [
+                "g",
+                "t"
+            ],
+            "commands": [
+                "editor.action.goToTypeDefinition"
+            ]
+        },
+        // Peek Type Definition
+        {
+            "before": [
+                "g",
+                "p",
+                "t"
+            ],
+            "commands": [
+                "editor.action.peekTypeDefinition"
+            ]
+        },
+        // switch between tabs:
+        {
+            "before": [
+                "leader",
+                "L"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "H"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
     ],
+    "workbench.iconTheme": "catppuccin-perfect-dracula",
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
 }
