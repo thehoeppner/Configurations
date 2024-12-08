@@ -1,0 +1,40 @@
+{
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "terminal.explorerKind": "external",
+    "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "debug.console.closeOnEnd": true,
+    "debug.allowBreakpointsEverywhere": true,
+    "git.enableSmartCommit": true,
+    "editor.fontFamily": "JetBrains Mono",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "explorer.compactFolders": false,
+    "editor.codeLensFontFamily": "JetBrains Mono",
+    "editor.inlayHints.fontFamily": "JetBrains Mono",
+    "vim.statusBarColorControl": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff"
+    },
+    "editor.lineNumbers": "relative",
+    "workbench.iconTheme": "catppuccin-perfect-dracula",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.showTabs": "multiple",
+    "editor.fontLigatures": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "terminal.integrated.suggest.enabled": true,
+}
