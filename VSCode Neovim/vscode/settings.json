@@ -4,6 +4,7 @@
     "terminal.explorerKind": "external",
     "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
     "debug.console.closeOnEnd": true,
     "debug.allowBreakpointsEverywhere": true,
     "git.enableSmartCommit": true,
@@ -37,4 +38,11 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "terminal.integrated.suggest.enabled": true,
+    "nvim-ui.nvimColorCustomizationKeys": [
+        "tab.activeBorder",
+        "editorCursor.foreground"
+    ],
+    "files.autoSave": "afterDelay",
+    "csharp.experimental.debug.hotReload": true,
+    "editor.minimap.enabled": false,
 }
