@@ -16,11 +16,6 @@
     "when": "codeActionMenuVisible"
   },
   {
-    "key": "ctrl+space",
-    "command": "editor.action.inlineSuggest.commit",
-    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
-  },
-  {
     "key": "ctrl+j",
     "command": "selectNextSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
@@ -31,8 +26,48 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "ctrl+space",
-    "command": "editor.action.accessibleViewAcceptInlineCompletion",
-    "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
+    "key": "space",
+    "command": "workbench.action.acceptSelectedQuickOpenItem",
+    "when": "inQuickOpen && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "space e",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus && !inputFocus && !matchFocus"
+  },
+  {
+    "key": "ctrl+escape",
+    "command": "-workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "t c",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly && neovim.mode == 'visual'"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+oem_period",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
   }
 ]
